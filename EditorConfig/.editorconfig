@@ -1,0 +1,29 @@
+# This file is an EditorConfig file used to maintain consistent coding style across various editors and IDEs.
+# For more information, visit editorconfig.org
+
+# Set the configuration for the root level of the project
+root = true
+
+# Define default formatting settings for all files
+[*]
+charset = utf-8                        # Set character encoding to UTF-8
+end_of_line = lf                       # Set line endings to LF (Unix-style)
+indent_size = 4                        # Set the indentation size to 4 spaces
+tab_width = 4                          # Set tab width to 4 spaces
+indent_style = tab                     # Use tabs for indentation
+insert_final_newline = true            # Ensure a newline is inserted at the end of files
+trim_trailing_whitespace = true        # Remove trailing whitespace at the end of lines
+
+# Define specific formatting settings for text files
+[*.txt]
+trim_trailing_whitespace = false       # Preserve trailing whitespace in text files
+
+# Define specific formatting settings for Markdown, JSON, and YAML files
+[*.{md,json,yml}]
+trim_trailing_whitespace = false       # Preserve trailing whitespace in Markdown, JSON, and YAML files
+indent_style = space                   # Use spaces for indentation
+indent_size = 2                        # Set indentation size to 2 spaces
+
+# Define specific formatting settings for JSON files
+[*.json]
+indent_style = tab                     # Use tabs for indentation in JSON files
