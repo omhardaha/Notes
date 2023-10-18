@@ -19,11 +19,11 @@ console.log(userFullnames);
 ### 2. For Each
 ``` 
 numbers.forEach((number, index, array) => {
-    console.log(array);
+    console.log(number);
 });
 ```
 
-### 3. Installation Of OHMYZSH
+### 3. Filter
 ``` 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
