@@ -1,3 +1,5 @@
+## It defines the current project consistency with different ide & editors
+
 # top-most EditorConfig file
 ```
 root = true
