@@ -9,14 +9,15 @@ npm i chalk
 ```
 import ora from 'ora';
 import chalk from 'chalk';
-const spinner = ora('Check if File(data.md) Exists Or Not.').start();
+const spinner = ora('Check if ????').start();
 
 spinner.succeed();
 
-spinner.start('Check if File is Empty.');
+spinner.start('Check if?????/');
 
 spinner.succeed();
 
 spinner.fail(chalk.red('Failed to create file.'));
 
+spinner.stop();
 ```
