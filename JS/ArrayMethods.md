@@ -25,5 +25,5 @@ numbers.forEach((number, index, array) => {
 
 ### 3. Filter
 ``` 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+const validTables = tables.filter((tab) => isValid(tab));
 ```
