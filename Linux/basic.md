@@ -74,22 +74,31 @@ omhardaha1 in /mnt/c/Projects
 ➜  tree
 .
 ├── newdir1
-│   └── new1
-├── test.txt
-└── t.txt
-
-3 directories, 2 files
+    └── new1
+ 
 ```
 #### 10. cat (show and create the file with contents)
+create file with text
 ``` 
-// create file with text
 omhardaha1 in /mnt/c/Projects
 ➜  cat > test.txt
 this is line 1
 this line 2
+```
 
-// read the file content
+read the file content
+```
 ➜  cat test.txt
+this is line 1
+this line 2
+```
+Redirect Contents of a Single File. \
+If the destination filename doesn’t exist, it will be created. 
+```
+omhardaha1 in /mnt/c/Projects
+➜  cat test.txt > testnew.txt
+omhardaha1 in /mnt/c/Projects
+➜  cat testnew.txt
 this is line 1
 this line 2
 ```
