@@ -6,6 +6,7 @@
         Address VARCHAR(255),
         City VARCHAR(255)
     );
+    
 ### Insert Into Table : student (Single Raw)
     insert into student value (1,'om','bamhni','mandla')
 

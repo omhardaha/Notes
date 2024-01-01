@@ -8,9 +8,8 @@
     [] - Represents any single character within the brackets 
          SELECT * FROM Customers WHERE CustomerName LIKE '[bsp]%';
 
-    *  - Represents any character not in the brackets     
-    -  - Represents any single character within the specified range 
-    {} - Represents any escaped character                 
+    ! or ^  - Represents any character not in the brackets     
+    -  - Represents any single character within the specified range
 
 
 ### Starts with 'a'
@@ -30,6 +29,10 @@ SELECT * FROM Customers WHERE Name LIKE '%aa%';
 ### Return all customers starting with either "b", "s", or "p":
 ```
 SELECT * FROM Customers WHERE CustomerName LIKE '[bsp]%';
+```
+### Return all customers not starting with either "b", "s", or "p":
+```
+SELECT * FROM Customers WHERE CustomerName LIKE '[!bsp]%';
 ```
 ### Return all customers starting with either "a", "b", "c", "d":
 ```
