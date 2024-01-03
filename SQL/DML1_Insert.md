@@ -1,5 +1,4 @@
 ### Create Table: student
-
     CREATE TABLE student (
         p_id INT,
         FirstName VARCHAR(255),

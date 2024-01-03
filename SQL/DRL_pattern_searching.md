@@ -13,28 +13,28 @@
 
 
 ### Starts with 'a'
-```
+```sql
 SELECT * FROM Customers WHERE Name LIKE 'a%';
 ```
 
 ### Ends with 'a'
-```
+```sql
 SELECT * FROM Customers WHERE Name LIKE '%a';
 ```
 ### Contains 'aa' anywhere in String
-```
+```sql
 SELECT * FROM Customers WHERE Name LIKE '%aa%';
 ```
 
 ### Return all customers starting with either "b", "s", or "p":
-```
+```sql
 SELECT * FROM Customers WHERE CustomerName LIKE '[bsp]%';
 ```
 ### Return all customers not starting with either "b", "s", or "p":
-```
+```sql
 SELECT * FROM Customers WHERE CustomerName LIKE '[!bsp]%';
 ```
 ### Return all customers starting with either "a", "b", "c", "d":
-```
+```sql
 SELECT * FROM Customers WHERE CustomerName LIKE '[a-d]%';
 ```

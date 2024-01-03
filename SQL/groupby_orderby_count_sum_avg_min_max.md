@@ -70,7 +70,7 @@ select distinct department from employee;
         ```
         select department , count(*) from employee group by department;
         ```
-        
+
    - `SUM()`
         ```
         select department , sum(salary) from employee group by department;
@@ -86,3 +86,24 @@ select distinct department from employee;
    
 
 
+## GROUP BY HAVING
+
+1. **Out of the categories made by GROUP BY, we would like to know only a particular thing (cond).**
+   - Similar to WHERE.
+   
+3. **Example:**
+   ```sql
+   SELECT COUNT(cust_id), country FROM customer GROUP BY country HAVING COUNT(cust_id) > 50;
+## WHERE vs HAVING
+
+- Both have the same function of filtering rows based on certain conditions.
+- `WHERE` clause is used to filter the rows from the table based on specified conditions.
+- `HAVING` clause is used to filter the rows from the groups based on the specified condition.
+- `HAVING` is used after `GROUP BY` while `WHERE` is used before the `GROUP BY` clause.
+- If you are using `HAVING`, `GROUP BY` is necessary.
+- `WHERE` can be used with `SELECT`, `UPDATE`, and `DELETE` keywords, while `GROUP BY` is used with `SELECT`.
+
+```
+
+select department , count(*) from employee group by department having count(*) > 2;
+```
