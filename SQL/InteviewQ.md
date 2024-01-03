@@ -102,7 +102,11 @@ select * from worker where YEAR(joining_date) = 2014 AND MONTH(joining_date) = 0
 ```sql
 select * from  worker where SUBSTRING(JOINING_DATE,1,7)='2014-02';
 ```
-
+#### Q6 Write an SQL query to fetch the no. of workers for each department in the descending order.
+```sql
+select department, count(worker_id) AS no_of_worker from worker group by department
+ORDER BY no_of_worker desc;
+``` 
 
 - RTRIM() - Remove trailing spaces from a string.
 - LTRIM() - Remove starting spaces from a string.
