@@ -124,6 +124,12 @@ select w.department, w.first_name, w.salary from
  (select max(salary) as maxsal, department from worker group by department) temp
 inner join worker w on temp.department = w.department and temp.maxsal = w.salary;
 ``` 
+#### Q8 Write an SQL query to fetch the names of workers who earn the highest salary.
+
+```sql
+
+select first_name, salary from worker where salary = (select max(Salary) from worker);
+``` 
 
 - RTRIM() - Remove trailing spaces from a string.
 - LTRIM() - Remove starting spaces from a string.
