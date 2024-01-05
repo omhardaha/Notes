@@ -107,6 +107,23 @@ select * from  worker where SUBSTRING(JOINING_DATE,1,7)='2014-02';
 select department, count(worker_id) AS no_of_worker from worker group by department
 ORDER BY no_of_worker desc;
 ``` 
+#### Q6 Write an SQL query to fetch the no. of workers for each department in the descending order.
+```sql
+select department, count(worker_id) AS no_of_worker from worker group by department
+ORDER BY no_of_worker desc;
+``` 
+#### Q7 Write an SQL query to show the last record from a table.
+
+```sql
+select * from worker where worker_id = (select max(worker_id) from worker);
+``` 
+#### Q8 Write an SQL query to print the name of employees having the highest salary in each department.
+
+```sql
+select w.department, w.first_name, w.salary from
+ (select max(salary) as maxsal, department from worker group by department) temp
+inner join worker w on temp.department = w.department and temp.maxsal = w.salary;
+``` 
 
 - RTRIM() - Remove trailing spaces from a string.
 - LTRIM() - Remove starting spaces from a string.
