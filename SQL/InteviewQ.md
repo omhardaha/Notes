@@ -107,36 +107,62 @@ select * from  worker where SUBSTRING(JOINING_DATE,1,7)='2014-02';
 select department, count(worker_id) AS no_of_worker from worker group by department
 ORDER BY no_of_worker desc;
 ``` 
-#### Q6 Write an SQL query to fetch the no. of workers for each department in the descending order.
-```sql
-select department, count(worker_id) AS no_of_worker from worker group by department
-ORDER BY no_of_worker desc;
-``` 
 #### Q7 Write an SQL query to show the last record from a table.
 
 ```sql
+select * from  worker where WORKER_ID = (select max(WORKER_ID) from worker);
+``` 
+#### Q8 Write an SQL query to fetch the names of workers who earn the highest salary.
+
+```sql
+select * from  worker where salary = (select max(SALARY) from worker);
+``` 
+#### Q9 Write an SQL query to fetch the last five records from a table..
+
+```sql
+(select * from  worker  ORDER BY worker_id desc limit 5)ORDER BY worker_id;
+``` 
+#### Q10 Write an SQL query to show the last record from a table.
+
+```sql 
 select * from worker where worker_id = (select max(worker_id) from worker);
 ``` 
-#### Q8 Write an SQL query to print the name of employees having the highest salary in each department.
+#### Q11 Write an SQL query to fetch the first row of a table.
+
+```sql
+select * from worker where worker_id = (select min(worker_id) from worker);
+``` 
+#### Q12 Write an SQL query to show all departments along with the number of people.
+```sql
+select  DEPARTMENT,Count(FIRST_NAME) from  worker  group by DEPARTMENT;
+``` 
+#### Q13 Write an SQL query to fetch the departments that have less than 4 people in it.
+```sql
+select  DEPARTMENT,Count(FIRST_NAME) from  worker  group by DEPARTMENT having count(* )<4;
+``` 
+#### Q14 show the current date and time.
+```sql
+select curdate();
+select now();
+``` 
+
+
+
+
+#### Q9 Write an SQL query to print the name of employees having the highest salary in each department.
 
 ```sql
 select w.department, w.first_name, w.salary from
  (select max(salary) as maxsal, department from worker group by department) temp
 inner join worker w on temp.department = w.department and temp.maxsal = w.salary;
 ``` 
-#### Q8 Write an SQL query to fetch the names of workers who earn the highest salary.
 
-```sql
-
-select first_name, salary from worker where salary = (select max(Salary) from worker);
-``` 
-
-- RTRIM() - Remove trailing spaces from a string.
-- LTRIM() - Remove starting spaces from a string.
-- INSTR() - returns the position of the first occurrence of a string in another string.
-- LENGTH() - returns the length of a string (in bytes).
-- REPLACE() - replaces all occurrences of a substring within a string, with a new substring.
-- CONCAT() - adds two or more expressions together.
+- `RTRIM()` - Remove trailing spaces from a string.
+- `INSTR()` - returns the position of the first occurrence of a string in another string.
+- `LTRIM()` - Remove starting spaces from a string.
+- `LENGTH()` - returns the length of a string (in bytes).
+- `REPLACE()` - replaces all occurrences of a substring within a string, with a new substring.
+- `CONCAT()` - adds two or more expressions together.
     ```sql
     select CONCAT(first_name, ' ', last_name) AS COMPLETE_NAME from worker;
     ```
