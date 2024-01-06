@@ -46,3 +46,15 @@ desc orders;
 -- Delete The Schema of table and all entries
 drop table orders;
 ```
+
+**REPLACE**
+
+1. Primarily used for an already present tuple in a table.
+2. As an UPDATE, using REPLACE with the help of the WHERE clause in the primary key (PK), then that row will be replaced.
+3. As an INSERT, if there is no duplicate data, a new tuple will be inserted.
+4. Example of using REPLACE for inserting or updating a row in the `student` table:
+   ```sql
+   REPLACE INTO student (id, class) VALUES (4, 3);
+
+   REPLACE INTO table SET col1 = val1, col2 = val2;
+   ```
