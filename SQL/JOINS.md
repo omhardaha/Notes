@@ -152,3 +152,17 @@
    
 
 ## 7. SELF JOIN
+
+### Join without using join keywords.
+
+**Example 1:**
+
+```sql
+SELECT * FROM table1, table2 WHERE table1.condition_column = table2.condition_column;
+```
+**Example 2:**
+
+```sql
+SELECT artist_name, album_name, year_recorded
+FROM artist, album
+WHERE artist.id = album.artist_id;
