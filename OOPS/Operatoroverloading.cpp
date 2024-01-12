@@ -1,56 +1,33 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-class Complex
+class B; // Forward declaration
+
+class A
 {
-    int a, b;
+public:
+    void friendFunction(B obj); // Declaration of friend function
+};
+
+class B
+{
+private:
+    int privateData;
 
 public:
-    void setData(int x, int y) { a = x, b = y; }
-    void showData() { cout << "a=" << a << " b=" << b << endl; }
-
-    Complex operator+(Complex c)
-    {
-        Complex temp;
-        temp.setData(a + c.a, b + c.b);
-        return temp;
-    }
-    void operator-() // negetion of 
-    {
-        a=-a;
-        b=-b;
-    }
-    Complex operator++() //increment
-    {
-        Complex c;
-        c.a = ++a;
-        c.b = ++b;
-        return c;
-    }
-    Complex operator++(int) // post increment
-    {
-        Complex c;
-        c.a = a++;
-        c.b = b++;
-        return c;
-    }
+    B(int data) : privateData(data) {}
+    friend void A::friendFunction(B obj); // Declaration of friend function from A
 };
+
+void A::friendFunction(B obj)
+{
+    cout << "The friend function of A can access privateData: " << obj.privateData << endl;
+}
 
 int main()
 {
-    Complex c1, c2, c3;
-    c1.setData(3, 4);
-    c2.setData(5, 6);
-    c3 = c1 + c2;   // c3 = c1.operator+(c2);    
-    c3.showData();
-    -c3;            // c3.operator-();
-    c3.showData();
-
-    Complex c4;
-    c4.setData(7,7);
-    ++c4;
-    c4.showData();
-    c4++;
-    c4.showData();
+    B obj(42);
+    A fc;
+    fc.friendFunction(obj);
     return 0;
 }
