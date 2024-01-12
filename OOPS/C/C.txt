@@ -1,0 +1,15 @@
+Add Two Numbers Without Using the Addition Operator  ->  x-(-y)
+Subtract Two Number Without Using Subtraction Operator -> x+(~y)+1
+Multiply an Integer Number by 2 Without Using Multiplication Operator x<<1
+
+What is the difference between malloc() and calloc()?
+-> calloc() and malloc() are memory dynamic memory allocating functions. The main difference is that malloc() only takes one argument, which is the number of bytes, but calloc() takes two arguments, which are the number of blocks and the size of each block.
+
+
+Dynamically allocate memory using malloc() 
+    ptr = (int*)malloc(n * sizeof(int))
+ 
+Dynamically allocate memory using calloc()
+    ptr1 = (int*)calloc(n, sizeof(int))
+
+
