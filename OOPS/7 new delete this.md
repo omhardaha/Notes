@@ -36,11 +36,12 @@ public:
 };
 int main()
 {
-    Complex *p = new Complex(2);
+    Complex *p = new Complex(2); 
     cout<<p->a;
     delete p;
 
     cout<<p;  // 20xd51730
+    cout<<p->a;
     return 0;
 }
 ```cpp

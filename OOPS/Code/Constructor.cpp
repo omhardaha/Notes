@@ -16,6 +16,7 @@ int main()
     cout<<p->a;
     delete p;
 
-    cout<<p;  // 20xd51730
+    // cout<<p;  // 20xd51730
+    // cout<<p->a;
     return 0;
 }
