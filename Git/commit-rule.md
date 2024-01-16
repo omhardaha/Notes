@@ -12,7 +12,7 @@
 
 ### Rule 1 : Use the Imperative mood
 
-- use `add` instead of `added`
+- use `add` instead of `added`.
 
 ### Rule 2 : Subject Line
 
@@ -28,16 +28,16 @@
 
 - limit 70 characters.
 - describe what and why but not how.
-- mention which component was changed
+- mention which component was changed.
 
 ### Rule 4 : Spacing and Blank Line
 
-- put a `blank` line between `subject` line and `body` line
+- put a `blank` line between `subject` line and `body` line.
 
 ### Rule 5 : Files
 
 - never commit change for different files seperately. 
-- ex. if we are creating login.jsx login.css ets for a component
+- ex. if we are creating login.jsx login.css ets for a component.
 - commit like "add new layout for login page".
 
 ### Rule 6 : Conventional Commits
@@ -52,3 +52,47 @@
 - **style:** Code style change (indentation, colon)
 
 Note: Commit with `!` for drawing attention to breaking changes
+
+
+
+
+### Examples
+* ```
+  feat: add email notifications on new direct messages
+  ```
+* ```
+  feat(shopping cart): add the amazing button
+  ```
+* ```
+  feat!: remove ticket list endpoint
+
+  refers to JIRA-1337
+
+  BREAKING CHANGES: ticket enpoints no longer supports list all entites.
+  ```
+* ```
+  fix(api): handle empty message in request body
+  ```
+* ```
+  fix(api): fix wrong calculation of request body checksum
+  ```
+* ```
+  fix: add missing parameter to service call
+
+  The error occurred because of <reasons>.
+  ```
+* ```
+  perf: decrease memory footprint for determine uniqe visitors by using HyperLogLog
+  ```
+* ```
+  build: update dependencies
+  ```
+* ```
+  build(release): `bump version to 1.0.0
+  ```
+* ```
+  refactor: implement fibonacci number calculation as recursion
+  ```
+* ```
+  style: remove empty line
+  ```
