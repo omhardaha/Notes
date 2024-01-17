@@ -151,3 +151,11 @@ omhardaha1 in /mnt/c/Projects
 ➜  cat dell.txt
 hi dear
 ```
+### 13. clear (clear display )
+```
+➜  clear
+```
+### 14. whoami ( display the username )
+```
+➜  whoami
+```
