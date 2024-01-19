@@ -1,5 +1,10 @@
-## Do Below Things To Setup
+### Why 2 use zsh
+- In Linux(Unix) the default shell is bash.
+- but zsh has more additional features. i.e. Advanced tab completion , Better history management m etc.
 
+
+
+## Do Below Things To Setup
 ### 1. Update the Ubuntu
 ``` 
 sudo apt update
@@ -15,12 +20,12 @@ sudo apt install zsh -y
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-4
+### 4
 ``` 
 git clone https://github.com/spaceship-prompt/spaceship-prompt "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
 ```
 
-5
+### 5
 ``` 
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme" 
 ```
@@ -50,7 +55,31 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 ```
 
 
-8
+### 8
 ``` 
 Edit Windows terminal settings example https://github.com/codingphasedotcom/...
 ```
+
+### 9 Changing Deafult Shell
+```bash
+# bash is default
+chsh -s /bin/bash 
+
+chsh -s /bin/zsh
+```
+
+
+### 10 Removing Error 
+ - `Warning! The 'vi_mode' section was not found. Removing it from the prompt.`
+
+ - 
+    ```
+    git clone https://github.com/spaceship-prompt/spaceship-vi-mode.git $ZSH_CUSTOM/plugins/spaceship-vi-mode
+    ```
+ - 
+    ```
+    ➜  code .zshrc
+    ```
+    - add `plugins=(git spaceship-vi-mode) `
+
+
