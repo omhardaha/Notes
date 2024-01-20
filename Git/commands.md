@@ -70,6 +70,11 @@
 
   git add .
   ```
+- `git rm`: Remove tracked files. Inverse of git add
+
+  ```bash
+  git rm app.py readme.md
+  ```
 
 - `git commit ` : Records changes to the repository.
 
@@ -84,20 +89,73 @@
   git commit
   ```
 
-- `git branch`: Creates a new branch.
+- `git branch` : Creates a new branch.
+    - Git has branches locally and remote.
 
     ```bash
-    # create a new branch
-
+    # create a new branch (local)
     git branch om1
     git branch om2
+    git branch main
 
-    git branch -M main
+    # show the branches
+    git branch       // show only local branches
+    git branch -r       // show only remote branches
+    git branch -a       // show both
+
+
+    # delete branch
+    git branch -d om1
+
     ```
 
-- `git checkout`: Switches to a different branch.
+- `git checkout` : Switches to a different branch.
 
-    ```
+    ```bash
     git checkout main
     git checkout om1
+
+    # revert a commit
+    git checkout <commit-hash>
     ```
+- `git switch` : Switches to a different branch.
+    - same as checkout but only focus on branch changing.
+
+    ```bash
+    git swich main
+    ```
+
+`git clean`: Removes untracked files from the working directory.
+
+ - Example if you have 3 file in project.
+
+ - `t1.js, t2.js, t3.js`.
+
+ - if you do
+
+ - 
+    ```bash
+    git add t1.js m t2.js
+
+    git status
+    Changes to be committed:
+    new file:   t1.js
+    new file:   t2.js
+
+    
+    ls
+    t1.js  t2.js t3.js
+    ```
+    - if you run `git clean` it will delete the t2.js
+
+    ```bash
+
+    git clean -f
+    Removing t3.js
+
+    ls
+    t1.js  t2.js
+
+
+    ```
+    - -f param is for forcing the command to delete files

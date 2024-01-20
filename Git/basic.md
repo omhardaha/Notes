@@ -34,41 +34,6 @@
 
 ```
 
-`git clean`: Removes untracked files from the working directory.
-
- - Example if you have 3 file in project.
-
- - `t1.js, t2.js, t3.js`.
-
- - if you do
-
- - 
-    ```bash
-    git add t1.js m t2.js
-
-    git status
-    Changes to be committed:
-    new file:   t1.js
-    new file:   t2.js
-
-    
-    ls
-    t1.js  t2.js t3.js
-    ```
-    - if you run `git clean` it will delete the t2.js
-
-    ```bash
-
-    git clean -f
-    Removing t3.js
-
-    ls
-    t1.js  t2.js
-
-
-    ```
-    - -f param is for forcing the command to delete files
-
 #### git stash: Saves changes to the working directory without committing them.
 
 ```
