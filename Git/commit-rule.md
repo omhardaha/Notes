@@ -53,9 +53,6 @@
 
 Note: Commit with `!` for drawing attention to breaking changes
 
-
-
-
 ### Examples
 * ```
   feat: add email notifications on new direct messages
