@@ -94,9 +94,9 @@
 
     ```bash
     # create a new branch (local)
-    git branch om1
-    git branch om2
-    git branch main
+    git branch -b om1
+    git branch -b om2
+    git branch -b main
 
     # show the branches
     git branch       // show only local branches
