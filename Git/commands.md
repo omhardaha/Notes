@@ -69,6 +69,10 @@
   # all files in current directory.
 
   git add .
+
+  # remove files from stage area
+  
+  git restore --staged <file>...
   ```
 - `git rm`: Remove tracked files. Inverse of git add
 
