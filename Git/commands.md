@@ -71,7 +71,7 @@
   git add .
 
   # remove files from stage area
-  
+
   git restore --staged <file>...
   ```
 - `git rm`: Remove tracked files. Inverse of git add
@@ -98,18 +98,21 @@
 
     ```bash
     # create a new branch (local)
-    git branch -b om1
-    git branch -b om2
-    git branch -b main
+    git checkout -b om1
+    git checkout -b om2
+    git checkout -b main
 
     # show the branches
     git branch       // show only local branches
     git branch -r       // show only remote branches
     git branch -a       // show both
 
+    # rename branch
+    git branch -m <old-branch-name> <new-branch-name>
 
     # delete branch
     git branch -d om1
+    git branch -D calc-branch   // without fully merging
 
     ```
 
