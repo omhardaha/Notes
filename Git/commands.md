@@ -93,29 +93,6 @@
   git commit
   ```
 
-- `git branch` : Creates a new branch.
-    - Git has branches locally and remote.
-
-    ```bash
-    # create a new branch (local)
-    git checkout -b om1
-    git checkout -b om2
-    git checkout -b main
-
-    # show the branches
-    git branch       // show only local branches
-    git branch -r       // show only remote branches
-    git branch -a       // show both
-
-    # rename branch
-    git branch -m <old-branch-name> <new-branch-name>
-
-    # delete branch
-    git branch -d om1
-    git branch -D calc-branch   // without fully merging
-
-    ```
-
 - `git checkout` : Switches to a different branch.
 
     ```bash
