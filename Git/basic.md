@@ -1,6 +1,3 @@
-
-
-
 - `git push`: Uploads changes to a remote repository.
 
     ```
@@ -13,8 +10,6 @@
     ```
 
     ```
-
-
 
 - `git merge`: Combines changes from different branches into a single branch.
 
