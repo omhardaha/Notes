@@ -116,3 +116,14 @@ varriables in mixin
 	@include small-border(orange, 3);
 }
 ```
+
+### Inheritance
+
+we can reuse code with `@extend` keyword
+
+```scss
+.my-box2 {
+	@extend .my-box1;
+	color: blueviolet;
+}
+```
