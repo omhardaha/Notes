@@ -45,7 +45,9 @@ scss
     ├── styles.scss
     └── _variables.scss
 ```
+
 styles.scss
+
 ```scss
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import "variables";
@@ -59,10 +61,44 @@ h1 {
 }
 // ...
 ```
-_variables.scss
+
+\_variables.scss
+
 ```scss
 $head-color: rgb(47, 155, 185);
 $border: 1px solid green;
 $margins: 1px 2px 4px 1px;
 $default-font: "lato", "Helvetica", "sansserif";
+```
+
+### Mixin
+
+Allow you to reuse block of code.
+
+- declare the code with `@mixin`.
+- use it with `@include`
+
+SCSS
+
+```scss
+@mixin box-text {
+	padding: 10px;
+	font-size: 30px;
+	font-family: lato;
+	color: rgb(217, 130, 24);
+}
+.my-box1 {
+	@include box-text;
+}
+```
+
+Compiled CSS
+
+```css
+.my-box1 {
+	padding: 10px;
+	font-size: 30px;
+	font-family: lato;
+	color: rgb(217, 130, 24);
+}
 ```
