@@ -102,3 +102,17 @@ Compiled CSS
 	color: rgb(217, 130, 24);
 }
 ```
+
+varriables in mixin
+
+```scss
+@mixin small-border($color, $radius) {
+	border: 1px solid $color;
+	border-radius: $radius;
+}
+
+.my-box1 {
+	@include box-text;
+	@include small-border(orange, 3);
+}
+```
