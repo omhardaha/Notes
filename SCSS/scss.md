@@ -127,3 +127,20 @@ we can reuse code with `@extend` keyword
 	color: blueviolet;
 }
 ```
+
+### Nesting
+
+For avoid duplication we write code inside perent
+```scss
+.my-box2 {
+	.text {
+		p {
+			color: darkcyan;
+		}
+		a {
+			font-size: larger;
+			font-weight: bolder;
+		}
+	}
+}
+```
