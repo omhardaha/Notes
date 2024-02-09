@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "variables";
+
+h1 {
+	font-size: 90px;
+	color: $head_color;
+	// font-family: $default-font;
+	border: $border;
+	margin: $margins;
+}
+
+body {
+	$my-bg-color: rgb(245, 253, 255); // valid till current block
+	background-color: $my-bg-color;
+}
+
+@mixin box-text {
+	padding: 10px;
+	font-size: 30px;
+	font-family: lato;
+	color: rgb(217, 130, 24);
+}
+
+@mixin apply-border($color, $radius) {
+	border: 1px solid $color;
+	border-radius: $radius;
+}
+
+.my-box1 {
+	@include box-text;
+	@include apply-border(orange, 3);
+}
+
+.my-box2 {
+	@extend .my-box1;
+	color: blueviolet;
+
+	.text {
+		p {
+			color: darkcyan;
+		}
+		a {
+			font-size: larger;
+			font-weight: bolder;
+		}
+	}
+}
+
+// Single Line Comment won’t be found in the final stylesheet
+/* This one will: it uses multiline delimiters! :) */
+/* You can store some useful information using
+comments, like the version of your stylesheet */
+
+* {
+	font-family: "Lato";
+}
