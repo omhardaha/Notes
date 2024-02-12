@@ -1,9 +1,9 @@
 ### What is Emmet
 
 It's a shorthand for HTML, CSS, JSX snippet.
+
 - code faster.
 - save time.
-
 
 Example
 ` nav>div.logo+div.buttons>(div.button>button{Home})*4|c`
@@ -28,7 +28,6 @@ will give you this -
 ```
 
 # Features
-
 
 ### Child (Nesting) `>`
 
@@ -105,7 +104,7 @@ Create multiple copy of same item.
 <h1 id="heading"></h1>
 ```
 
-### Class `.` 
+### Class `.`
 
 `h1.heading` will give you
 
@@ -127,4 +126,16 @@ Create multiple copy of same item.
 
 ```html
 <button>Submit</button>
+```
+
+### Comment `|c`
+
+`div.container>div#name|c` will give you
+
+```html
+<div class="container">
+	<div id="name"></div>
+	<!-- /#name -->
+</div>
+<!-- /.container -->
 ```
