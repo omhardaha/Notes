@@ -190,3 +190,15 @@ Exaplaination-
 </div>
 ```
 ````
+
+### Image Card
+
+`.card.w-40.bg-bg-gray-100.m-4>img[src="https://images.unsplash.com/photo-1707823585193-850a928684e7?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"].mb-2.cover+h2{A Boy With Head}.text-center`
+
+````html
+<div class="card w-40 bg-bg-gray-100 m-4">
+        <img src="https://images.unsplash.com/photo-1707823585193-850a928684e7?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="mb-2 cover">
+        <h2 class="text-center">A Boy With Head</h2>
+    </div>
+```
+````
