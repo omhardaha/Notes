@@ -159,7 +159,7 @@ Exaplaination-
 
 `.bg-brown-200.text-center.p-20>h1{How To Write Emmet And Improve Code Writing Speed}.font-bold.text-4xl+.date{4 September 2024}.my-4+p{This is a good way of writing the code which is better just a example text.This is a good way of writing the code which is better just a example text .This is a good way of writing the code which is better just a example text .This is a good way of writing the code which is better just a example text .This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text .This is a good way of writing the code which is better just a example text .This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text }.text-gray-600.leading-9.text-lg`
 
-````html
+```html
 <div class="bg-brown-200 text-center p-20">
 	<h1 class="font-bold text-4xl">
 		How To Write Emmet And Improve Code Writing Speed
@@ -189,16 +189,51 @@ Exaplaination-
 	</p>
 </div>
 ```
-````
 
 ### Image Card
 
 `.card.w-40.bg-bg-gray-100.m-4>img[src="https://images.unsplash.com/photo-1707823585193-850a928684e7?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"].mb-2.cover+h2{A Boy With Head}.text-center`
 
-````html
+```html
 <div class="card w-40 bg-bg-gray-100 m-4">
-        <img src="https://images.unsplash.com/photo-1707823585193-850a928684e7?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="mb-2 cover">
-        <h2 class="text-center">A Boy With Head</h2>
-    </div>
+	<img
+		src="https://images.unsplash.com/photo-1707823585193-850a928684e7?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+		alt=""
+		class="mb-2 cover"
+	/>
+	<h2 class="text-center">A Boy With Head</h2>
+</div>
 ```
-````
+
+### Footer
+
+`.footer.p-16.grid.grid-cols-4.gap-6.text-center.bg-stone-200>(.footer-box.p-10>(div.my-4>a[href="/"]{Link-$})*4)*4`
+
+```html
+<div class="footer p-16 grid grid-cols-4 gap-6 text-center bg-stone-200">
+	<div class="footer-box p-10">
+		<div class="my-4"><a href="/">Link-1</a></div>
+		<div class="my-4"><a href="/">Link-2</a></div>
+		<div class="my-4"><a href="/">Link-3</a></div>
+		<div class="my-4"><a href="/">Link-4</a></div>
+	</div>
+	<div class="footer-box p-10">
+		<div class="my-4"><a href="/">Link-1</a></div>
+		<div class="my-4"><a href="/">Link-2</a></div>
+		<div class="my-4"><a href="/">Link-3</a></div>
+		<div class="my-4"><a href="/">Link-4</a></div>
+	</div>
+	<div class="footer-box p-10">
+		<div class="my-4"><a href="/">Link-1</a></div>
+		<div class="my-4"><a href="/">Link-2</a></div>
+		<div class="my-4"><a href="/">Link-3</a></div>
+		<div class="my-4"><a href="/">Link-4</a></div>
+	</div>
+	<div class="footer-box p-10">
+		<div class="my-4"><a href="/">Link-1</a></div>
+		<div class="my-4"><a href="/">Link-2</a></div>
+		<div class="my-4"><a href="/">Link-3</a></div>
+		<div class="my-4"><a href="/">Link-4</a></div>
+	</div>
+</div>
+```
