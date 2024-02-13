@@ -154,3 +154,39 @@ Exaplaination-
 	</div>
 </div>
 ```
+
+### Blog Page
+
+`.bg-brown-200.text-center.p-20>h1{How To Write Emmet And Improve Code Writing Speed}.font-bold.text-4xl+.date{4 September 2024}.my-4+p{This is a good way of writing the code which is better just a example text.This is a good way of writing the code which is better just a example text .This is a good way of writing the code which is better just a example text .This is a good way of writing the code which is better just a example text .This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text .This is a good way of writing the code which is better just a example text .This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text }.text-gray-600.leading-9.text-lg`
+
+````html
+<div class="bg-brown-200 text-center p-20">
+	<h1 class="font-bold text-4xl">
+		How To Write Emmet And Improve Code Writing Speed
+	</h1>
+	<div class="date my-4">4 September 2024</div>
+	<p class="text-gray-600 leading-9 text-l">
+		This is a good way of writing the code which is better just a example
+		text.This is a good way of writing the code which is better just a example
+		text .This is a good way of writing the code which is better just a example
+		text .This is a good way of writing the code which is better just a example
+		text .This is a good way of writing the code which is better just a example
+		text This is a good way of writing the code which is better just a example
+		text This is a good way of writing the code which is better just a example
+		text This is a good way of writing the code which is better just a example
+		text .This is a good way of writing the code which is better just a example
+		text .This is a good way of writing the code which is better just a example
+		text This is a good way of writing the code which is better just a example
+		text This is a good way of writing the code which is better just a example
+		text This is a good way of writing the code which is better just a example
+		text This is a good way of writing the code which is better just a example
+		text This is a good way of writing the code which is better just a example
+		text This is a good way of writing the code which is better just a example
+		text This is a good way of writing the code which is better just a example
+		text This is a good way of writing the code which is better just a example
+		text This is a good way of writing the code which is better just a example
+		text
+	</p>
+</div>
+```
+````
