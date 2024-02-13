@@ -1,18 +1,78 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	</head>
-	<script src="https://cdn.tailwindcss.com"></script>
-	<body>
-		<!-- table>tr>th{$}*4^(tr>td{$}*4)*3 -->
-		<!-- form>(div>input)*6 -->
-		<!-- form.text-center.p-6.bg-stone-400.text-black>div.input.my-1>input[type="email" name="email"]^div.input.my-1>input[type="password"
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    /* text-white.bg-gray-600.hover:bg-gray-800.m-1.px-3.py-1 */
+    .btn-secondary {
+        color: white;
+        background-color: gray;
+        margin: 1px;
+        padding-left: 3px;
+        padding-right: 3px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        font-size: larger;
+    }
+
+    .btn-secondary:hover {
+        background-color: rgb(65, 65, 65);
+    }
+
+    .btn-primary {
+        color: white;
+        background-color: rgb(159, 171, 171);
+        margin: 2px;
+        padding: 4px;
+        font-size: larger;
+    }
+
+    .btn-primary:hover {
+        background-color: rgb(65, 65, 65);
+    }
+</style>
+
+<body>
+    <!-- table>tr>th{$}*4^(tr>td{$}*4)*3 -->
+    <!-- form>(div>input)*6 -->
+    <!-- form.text-center.p-6.bg-stone-400.text-black>div.input.my-1>input[type="email" name="email"]^div.input.my-1>input[type="password"
 		name="password" -->
 
-        <!-- form.text-center.p-6.bg-stone-400.text-black>div.input.my-1>input[type="email" name="email"].p-2^div.input.my-1>input[type="password" name=password].p-2 -->
+    <!-- form.text-center.p-6.bg-stone-400.text-black>div.input.my-1>input[type="email" name="email"].p-2^div.input.my-1>input[type="password" name=password].p-2 -->
 
-        <!-- form.text-center.p-3.bg-gray-200>div>button{OPEN}.p-3.font-bold.text-white.bg-black.hover:bg-white.hover:text-black.border-2.border-black -->
-	</body>
+    <!-- form.text-center.p-3.bg-gray-200>div>button{OPEN}.p-3.font-bold.text-white.bg-black.hover:bg-white.hover:text-black.border-2.border-black -->
+
+    <div class="keyboard-box text-center font-bold bg-stone-800 text-lg">
+        <div class="number-row"><button class="btn-primary">1</button><button class="btn-primary">2</button><button
+                class="btn-primary">3</button><button class="btn-primary">4</button><button
+                class="btn-primary">5</button><button class="btn-primary">6</button><button
+                class="btn-primary">7</button><button class="btn-primary">8</button><button
+                class="btn-primary">9</button><button class="btn-primary">10</button></div>
+        <div class="qwertyuiop-row"><button class="btn-primary">Q</button><button class="btn-primary">Q</button><button
+                class="btn-primary">Q</button><button class="btn-primary">Q</button><button
+                class="btn-primary">Q</button><button class="btn-primary">Q</button><button
+                class="btn-primary">Q</button><button class="btn-primary">Q</button><button
+                class="btn-primary">Q</button><button class="btn-primary">Q</button></div>
+        <div class="asdfghjkl-row"><button class="btn-primary">A</button><button class="btn-primary">A</button><button
+                class="btn-primary">A</button><button class="btn-primary">A</button><button
+                class="btn-primary">A</button><button class="btn-primary">A</button><button
+                class="btn-primary">A</button><button class="btn-primary">A</button><button
+                class="btn-primary">A</button></div>
+        <div class="zxcvbnm-row"><button class="btn-secondary">ᛏ</button><button class="btn-primary">Z</button><button
+                class="btn-primary">Z</button><button class="btn-primary">Z</button><button
+                class="btn-primary">Z</button><button class="btn-primary">Z</button><button
+                class="btn-primary">Z</button><button class="btn-primary">Z</button><button
+                class="btn-secondary">←</button></div>
+        <div class="space-row"><button class="btn-secondary">?123</button><button
+                class="btn-secondary">,</button><button class="btn-primary">ʘ</button><button
+                class="btn-primary btn-space">Space</button><button class="btn-primary btn-secondary">.</button><button
+                class="btn-enter btn-primary">┘</button></div>
+    </div>
+    </div>
+</body>
+
 </html>

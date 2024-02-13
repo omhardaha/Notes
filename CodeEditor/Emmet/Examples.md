@@ -91,3 +91,66 @@
 	</div>
 </form>
 ```
+
+### QWERTY KeyBoard
+
+`.keyboard-box>.number-row>button{$}*10.btn-primary^.qwertyuiop-row>button{Q}*10.btn-primary^.asdfghjkl-row>button{A}*9.btn-primary^.zxcvbnm-row>button{ᛏ}.btn-secondary+button{Z}*7.btn-primary+button{←}.btn-secondary^.space-row>button{?123}.btn-secondary+button{,}.btn-secondary+button{ʘ}.btn-primary+button{Space}.btn-primary.btn-space+button{.}.btn-primary.btn-secondary+button{┘}.btn-enter.btn-primary`
+
+Exaplaination-
+
+- `.keyboard-box` creates a div with class name `keyboard-box`.
+- `>` we goes inside `keyboard-box` div.
+- `.number-row` creates a div with class name `number-row`.
+- `>` we goes inside `number-row` div.
+- `button{$}*10.btn-primary` create 10 button with classname `btn-primary` and inside text of button `$` replaced by number starts from 1 we need to change `10` to `0` after emmet.
+- `^` we goes one perent up inside `keyboard-box` div.
+- `.qwertyuiop-row` creates a div with class name `qwertyuiop-row`.
+- `>` we goes inside `qwertyuiop-row` div.
+- and `button{Q}*10.btn-primary` create similar 10 button.
+- same we did with 1 more row `asdfghjkl-row`.
+- In `zxcvbnm-row` row we added 2 special buttons `button{ᛏ}` and `button{←}` with class `btn-secondary`.
+- Similarly In `space-row` row we added few more special buttons.
+
+```html
+<div class="keyboard-box">
+	<div class="number-row">
+		<button class="btn-primary">1</button><button class="btn-primary">2</button
+		><button class="btn-primary">3</button><button class="btn-primary">4</button
+		><button class="btn-primary">5</button><button class="btn-primary">6</button
+		><button class="btn-primary">7</button><button class="btn-primary">8</button
+		><button class="btn-primary">9</button
+		><button class="btn-primary">10</button>
+	</div>
+	<div class="qwertyuiop-row">
+		<button class="btn-primary">Q</button><button class="btn-primary">Q</button
+		><button class="btn-primary">Q</button><button class="btn-primary">Q</button
+		><button class="btn-primary">Q</button><button class="btn-primary">Q</button
+		><button class="btn-primary">Q</button><button class="btn-primary">Q</button
+		><button class="btn-primary">Q</button
+		><button class="btn-primary">Q</button>
+	</div>
+	<div class="asdfghjkl-row">
+		<button class="btn-primary">A</button><button class="btn-primary">A</button
+		><button class="btn-primary">A</button><button class="btn-primary">A</button
+		><button class="btn-primary">A</button><button class="btn-primary">A</button
+		><button class="btn-primary">A</button><button class="btn-primary">A</button
+		><button class="btn-primary">A</button>
+	</div>
+	<div class="zxcvbnm-row">
+		<button class="btn-secondary">ᛏ</button
+		><button class="btn-primary">Z</button><button class="btn-primary">Z</button
+		><button class="btn-primary">Z</button><button class="btn-primary">Z</button
+		><button class="btn-primary">Z</button><button class="btn-primary">Z</button
+		><button class="btn-primary">Z</button
+		><button class="btn-secondary">←</button>
+	</div>
+	<div class="space-row">
+		<button class="btn-secondary">?123</button
+		><button class="btn-secondary">,</button
+		><button class="btn-primary">ʘ</button
+		><button class="btn-primary btn-space">Space</button
+		><button class="btn-primary btn-secondary">.</button
+		><button class="btn-enter btn-primary">┘</button>
+	</div>
+</div>
+```
