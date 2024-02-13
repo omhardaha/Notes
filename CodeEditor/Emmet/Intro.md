@@ -139,3 +139,14 @@ Create multiple copy of same item.
 </div>
 <!-- /.container -->
 ```
+
+### Numbering `$`
+
+`div.items$*4` will give you
+
+```html
+<div class="items1"></div>
+<div class="items2"></div>
+<div class="items3"></div>
+<div class="items4"></div>
+```
