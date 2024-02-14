@@ -1,122 +1,208 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<style>
+		@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
-<script src="https://cdn.tailwindcss.com"></script>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-   *{
-    font-family: 'lato';
-   }
-    /* text-white.bg-gray-600.hover:bg-gray-800.m-1.px-3.py-1 */
-    .btn-secondary {
-        color: white;
-        background-color: gray;
-        margin: 1px;
-        padding-left: 3px;
-        padding-right: 3px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        font-size: larger;
-    }
+		* {
+			font-family: "lato";
+		}
 
-    .btn-secondary:hover {
-        background-color: rgb(65, 65, 65);
-    }
+		/* text-white.bg-gray-600.hover:bg-gray-800.m-1.px-3.py-1 */
+		.btn-secondary {
+			color: white;
+			background-color: gray;
+			margin: 1px;
+			padding-left: 3px;
+			padding-right: 3px;
+			padding-top: 3px;
+			padding-bottom: 3px;
+			font-size: larger;
+		}
 
-    .btn-primary {
-        color: white;
-        background-color: rgb(159, 171, 171);
-        margin: 2px;
-        padding: 4px;
-        font-size: larger;
-    }
+		.btn-secondary:hover {
+			background-color: rgb(65, 65, 65);
+		}
 
-    .btn-primary:hover {
-        background-color: rgb(65, 65, 65);
-    }
-</style>
+		.btn-primary {
+			color: white;
+			background-color: rgb(159, 171, 171);
+			margin: 2px;
+			padding: 4px;
+			font-size: larger;
+		}
 
-<body>
+		.btn-primary:hover {
+			background-color: rgb(65, 65, 65);
+		}
+	</style>
 
-    <div class="card w-40 bg-bg-gray-100 m-4">
-        <img src="https://images.unsplash.com/photo-1707823585193-850a928684e7?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="mb-2 cover">
-        <h2 class="text-center">A Boy With Head</h2>
-    </div>
+	<body>
+		<div class="card w-40 bg-bg-gray-100 m-4">
+			<img
+				src="https://images.unsplash.com/photo-1707823585193-850a928684e7?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+				alt=""
+				class="mb-2 cover"
+			/>
+			<h2 class="text-center">A Boy With Head</h2>
+		</div>
 
-    <div class="footer p-16 grid grid-cols-4 gap-6 text-center bg-stone-200">
-        <div class="footer-box p-10">
-            <div class="my-4"><a href="/">Link-1</a></div>
-            <div class="my-4"><a href="/">Link-2</a></div>
-            <div class="my-4"><a href="/">Link-3</a></div>
-            <div class="my-4"><a href="/">Link-4</a></div>
-        </div>
-        <div class="footer-box p-10">
-            <div class="my-4"><a href="/">Link-1</a></div>
-            <div class="my-4"><a href="/">Link-2</a></div>
-            <div class="my-4"><a href="/">Link-3</a></div>
-            <div class="my-4"><a href="/">Link-4</a></div>
-        </div>
-        <div class="footer-box p-10">
-            <div class="my-4"><a href="/">Link-1</a></div>
-            <div class="my-4"><a href="/">Link-2</a></div>
-            <div class="my-4"><a href="/">Link-3</a></div>
-            <div class="my-4"><a href="/">Link-4</a></div>
-        </div>
-        <div class="footer-box p-10">
-            <div class="my-4"><a href="/">Link-1</a></div>
-            <div class="my-4"><a href="/">Link-2</a></div>
-            <div class="my-4"><a href="/">Link-3</a></div>
-            <div class="my-4"><a href="/">Link-4</a></div>
-        </div>
-    </div>
-    <!-- table>tr>th{$}*4^(tr>td{$}*4)*3 -->
-    <!-- form>(div>input)*6 -->
-    <!-- form.text-center.p-6.bg-stone-400.text-black>div.input.my-1>input[type="email" name="email"]^div.input.my-1>input[type="password"
+		<div class="footer p-16 grid grid-cols-4 gap-6 text-center bg-stone-200">
+			<div class="footer-box p-10">
+				<div class="my-4">
+					<a href="/">Link-1</a>
+				</div>
+				<div class="my-4">
+					<a href="/">Link-2</a>
+				</div>
+				<div class="my-4">
+					<a href="/">Link-3</a>
+				</div>
+				<div class="my-4">
+					<a href="/">Link-4</a>
+				</div>
+			</div>
+			<div class="footer-box p-10">
+				<div class="my-4">
+					<a href="/">Link-1</a>
+				</div>
+				<div class="my-4">
+					<a href="/">Link-2</a>
+				</div>
+				<div class="my-4">
+					<a href="/">Link-3</a>
+				</div>
+				<div class="my-4">
+					<a href="/">Link-4</a>
+				</div>
+			</div>
+			<div class="footer-box p-10">
+				<div class="my-4">
+					<a href="/">Link-1</a>
+				</div>
+				<div class="my-4">
+					<a href="/">Link-2</a>
+				</div>
+				<div class="my-4">
+					<a href="/">Link-3</a>
+				</div>
+				<div class="my-4">
+					<a href="/">Link-4</a>
+				</div>
+			</div>
+			<div class="footer-box p-10">
+				<div class="my-4">
+					<a href="/">Link-1</a>
+				</div>
+				<div class="my-4">
+					<a href="/">Link-2</a>
+				</div>
+				<div class="my-4">
+					<a href="/">Link-3</a>
+				</div>
+				<div class="my-4">
+					<a href="/">Link-4</a>
+				</div>
+			</div>
+		</div>
+		<!-- table>tr>th{$}*4^(tr>td{$}*4)*3 -->
+		<!-- form>(div>input)*6 -->
+		<!-- form.text-center.p-6.bg-stone-400.text-black>div.input.my-1>input[type="email" name="email"]^div.input.my-1>input[type="password"
 		name="password" -->
 
-    <!-- form.text-center.p-6.bg-stone-400.text-black>div.input.my-1>input[type="email" name="email"].p-2^div.input.my-1>input[type="password" name=password].p-2 -->
+		<!-- form.text-center.p-6.bg-stone-400.text-black>div.input.my-1>input[type="email" name="email"].p-2^div.input.my-1>input[type="password" name=password].p-2 -->
 
-    <!-- form.text-center.p-3.bg-gray-200>div>button{OPEN}.p-3.font-bold.text-white.bg-black.hover:bg-white.hover:text-black.border-2.border-black -->
+		<!-- form.text-center.p-3.bg-gray-200>div>button{OPEN}.p-3.font-bold.text-white.bg-black.hover:bg-white.hover:text-black.border-2.border-black -->
 
-    <div class="keyboard-box text-center font-bold bg-stone-800 text-lg">
-        <div class="number-row"><button class="btn-primary">1</button><button class="btn-primary">2</button><button
-                class="btn-primary">3</button><button class="btn-primary">4</button><button
-                class="btn-primary">5</button><button class="btn-primary">6</button><button
-                class="btn-primary">7</button><button class="btn-primary">8</button><button
-                class="btn-primary">9</button><button class="btn-primary">10</button></div>
-        <div class="qwertyuiop-row"><button class="btn-primary">Q</button><button class="btn-primary">Q</button><button
-                class="btn-primary">Q</button><button class="btn-primary">Q</button><button
-                class="btn-primary">Q</button><button class="btn-primary">Q</button><button
-                class="btn-primary">Q</button><button class="btn-primary">Q</button><button
-                class="btn-primary">Q</button><button class="btn-primary">Q</button></div>
-        <div class="asdfghjkl-row"><button class="btn-primary">A</button><button class="btn-primary">A</button><button
-                class="btn-primary">A</button><button class="btn-primary">A</button><button
-                class="btn-primary">A</button><button class="btn-primary">A</button><button
-                class="btn-primary">A</button><button class="btn-primary">A</button><button
-                class="btn-primary">A</button></div>
-        <div class="zxcvbnm-row"><button class="btn-secondary">ᛏ</button><button class="btn-primary">Z</button><button
-                class="btn-primary">Z</button><button class="btn-primary">Z</button><button
-                class="btn-primary">Z</button><button class="btn-primary">Z</button><button
-                class="btn-primary">Z</button><button class="btn-primary">Z</button><button
-                class="btn-secondary">←</button></div>
-        <div class="space-row"><button class="btn-secondary">?123</button><button
-                class="btn-secondary">,</button><button class="btn-primary">ʘ</button><button
-                class="btn-primary btn-space">Space</button><button class="btn-primary btn-secondary">.</button><button
-                class="btn-enter btn-primary">┘</button></div>
-    </div>
-    </div>
+		<div class="keyboard-box text-center font-bold bg-stone-800 text-lg">
+			<div class="number-row">
+				<button class="btn-primary">1</button>
+				<button class="btn-primary">2</button>
+				<button class="btn-primary">3</button>
+				<button class="btn-primary">4</button>
+				<button class="btn-primary">5</button>
+				<button class="btn-primary">6</button>
+				<button class="btn-primary">7</button>
+				<button class="btn-primary">8</button>
+				<button class="btn-primary">9</button>
+				<button class="btn-primary">0</button>
+			</div>
+			<div class="qwertyuiop-row">
+				<button class="btn-primary">Q</button>
+				<button class="btn-primary">W</button>
+				<button class="btn-primary">E</button>
+				<button class="btn-primary">R</button>
+				<button class="btn-primary">T</button>
+				<button class="btn-primary">Y</button>
+				<button class="btn-primary">U</button>
+				<button class="btn-primary">I</button>
+				<button class="btn-primary">O</button>
+				<button class="btn-primary">P</button>
+			</div>
+			<div class="asdfghjkl-row">
+				<button class="btn-primary">A</button>
+				<button class="btn-primary">S</button>
+				<button class="btn-primary">D</button>
+				<button class="btn-primary">F</button>
+				<button class="btn-primary">G</button>
+				<button class="btn-primary">H</button>
+				<button class="btn-primary">J</button>
+				<button class="btn-primary">K</button>
+				<button class="btn-primary">L</button>
+			</div>
+			<div class="zxcvbnm-row">
+				<button class="btn-secondary">ᛏ</button>
+				<button class="btn-primary">Z</button>
+				<button class="btn-primary">X</button>
+				<button class="btn-primary">C</button>
+				<button class="btn-primary">V</button>
+				<button class="btn-primary">B</button>
+				<button class="btn-primary">N</button>
+				<button class="btn-primary">M</button>
+				<button class="btn-secondary">←</button>
+			</div>
+			<div class="space-row">
+				<button class="btn-secondary">?123</button>
+				<button class="btn-secondary">,</button>
+				<button class="btn-primary">ʘ</button>
+				<button class="btn-primary btn-space">Space</button>
+				<button class="btn-primary btn-secondary">.</button>
+				<button class="btn-enter btn-primary">┘</button>
+			</div>
+		</div>
 
-
-    <div class="bg-brown-200 text-center p-20">
-        <h1 class="font-bold text-4xl">How To Write Emmet And Improve Code Writing Speed</h1>
-        <div class="date my-4">4 September 2024</div>
-        <p class="text-gray-600 leading-9 text-l">This is a good way of writing the code which is better just a example text.This is a good way of writing the code which is better just a example text .This is a good way of writing the code which is better just a example text .This is a good way of writing the code which is better just a example text .This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text .This is a good way of writing the code which is better just a example text .This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text This is a good way of writing the code which is better just a example text </p>
-    </div>
-
-</body>
-
+		<div class="bg-brown-200 text-center p-20">
+			<h1 class="font-bold text-4xl">
+				How To Write Emmet And Improve Code Writing Speed
+			</h1>
+			<div class="date my-4">4 September 2024</div>
+			<p class="text-gray-600 leading-9 text-l">
+				This is a good way of writing the code which is better just a example
+				text.This is a good way of writing the code which is better just a
+				example text .This is a good way of writing the code which is better
+				just a example text .This is a good way of writing the code which is
+				better just a example text .This is a good way of writing the code which
+				is better just a example text This is a good way of writing the code
+				which is better just a example text This is a good way of writing the
+				code which is better just a example text This is a good way of writing
+				the code which is better just a example text .This is a good way of
+				writing the code which is better just a example text .This is a good way
+				of writing the code which is better just a example text This is a good
+				way of writing the code which is better just a example text This is a
+				good way of writing the code which is better just a example text This is
+				a good way of writing the code which is better just a example text This
+				is a good way of writing the code which is better just a example text
+				This is a good way of writing the code which is better just a example
+				text This is a good way of writing the code which is better just a
+				example text This is a good way of writing the code which is better just
+				a example text This is a good way of writing the code which is better
+				just a example text This is a good way of writing the code which is
+				better just a example text
+			</p>
+		</div>
+	</body>
 </html>
