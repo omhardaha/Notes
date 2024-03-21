@@ -53,5 +53,3 @@ const CounterReducer = (state, action) => {
 	}
 };
 ```
-
-##
