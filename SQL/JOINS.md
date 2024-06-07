@@ -3,6 +3,7 @@
 ## 1. Introduction
 
 - All RDBMS are relational in nature, and we refer to other tables to get meaningful outcomes.
+- A JOIN clause is used to combine rows from two or more tables, based on a related column between them..
 - Foreign Keys (FK) are used to reference other tables.
 
   ```sql
